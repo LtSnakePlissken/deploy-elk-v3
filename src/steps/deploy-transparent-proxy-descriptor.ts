@@ -15,4 +15,3 @@ export const DEPLOY_TRANSPARENT_PROXY_DESCRIPTOR = createDeployContractStep({
     return [state.nonfungibleTokenPositionDescriptorAddressV1_3_0, state.proxyAdminAddress, '0x']
   },
 })
-
