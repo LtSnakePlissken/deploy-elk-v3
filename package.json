@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/deploy-v3",
+  "name": "@elk/deploy-v3",
   "version": "1.0.4",
-  "description": "Deploy Uniswap V3 smart contracts",
+  "description": "Deploy Elk V3 smart contracts",
   "bin": "dist/index.js",
   "publishConfig": {
     "access": "restricted"
@@ -25,18 +25,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Uniswap/deploy-v3.git"
+    "url": "git+https://github.com/elkfinance/deploy-elk-v3"
   },
   "author": {
     "email": "contact@uniswap.org",
-    "name": "Uniswap Labs",
-    "url": "https://uniswap.org"
+    "name": "Elk Labs",
+    "url": "https://elk.finance"
   },
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Uniswap/deploy-v3/issues"
+    "url": "https://github.com/elkfinance/deploy-elk-v3/issues"
   },
-  "homepage": "https://uniswap.org",
+  "homepage": "https://elk.finance",
   "devDependencies": {
     "@ethersproject/abstract-signer": "^5.5.0",
     "@ethersproject/address": "^5.5.0",
