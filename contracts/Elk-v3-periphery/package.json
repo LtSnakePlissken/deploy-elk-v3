@@ -1,20 +1,20 @@
 {
-  "name": "@uniswap/v3-periphery",
-  "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
+  "name": "@elk/v3-periphery",
+  "description": "🎚 Peripheral smart contracts for interacting with Elk V3",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
     "access": "public"
   },
   "version": "1.4.3",
-  "homepage": "https://uniswap.org",
+  "homepage": "https://elk.finance",
   "keywords": [
-    "uniswap",
+    "elk",
     "periphery",
     "v3"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v3-periphery"
+    "url": "https://github.com/elkfinance/deploy-elk-v3/tree/main/contracts/Elk-v3-periphery"
   },
   "files": [
     "contracts/base",
