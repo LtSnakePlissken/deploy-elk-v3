@@ -9,7 +9,7 @@ export const DEPLOY_TRANSPARENT_PROXY_DESCRIPTOR = createDeployContractStep({
       throw new Error('Missing NonfungibleTokenPositionDescriptor')
     }
     if (state.proxyAdminAddress === undefined) {
-      console.log("this is the proxy address",state.proxyAdminAddress)
+      console.log('this is the proxy address', state.proxyAdminAddress)
       throw new Error('Missing ProxyAdmin')
     }
     return [state.nonfungibleTokenPositionDescriptorAddressV1_3_0, state.proxyAdminAddress, '0x']
