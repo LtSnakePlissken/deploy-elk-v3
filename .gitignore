@@ -1,5 +1,7 @@
 private/
 
+.github/workflows
+
 # Logs
 logs
 *.log
