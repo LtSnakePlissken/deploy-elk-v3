@@ -4,6 +4,7 @@ This Package includes a CLI script for deploying Elk's V3 on any EVM compatible 
 This package Simplifies testing and deploying Elk V3 on any chain/network with simple script
 
 ## Prerequisites
+
 Yarn
 Linux Environment or WSL
 This Repo
@@ -13,7 +14,7 @@ Node 16.9.1
 
 On cloning this repo,
 Use NVM to install and use Node version 16.9.1
-if you don't know how to do that, go to https://github.com/coreybutler/nvm-windows for Windows or run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh`  for Linux.
+if you don't know how to do that, go to https://github.com/coreybutler/nvm-windows for Windows or run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh` for Linux.
 Confirm you are using the correct version of Node by running `nvm list` on your terminal or bash
 
 Install Yarn, if you don't already have that, from https://yarnpkg.com/
@@ -45,7 +46,7 @@ Options:
 The script runs a set of migrations, each migration deploying a contract or executing a transaction. Migration state is
 saved in a JSON file at the supplied path (by default `./state.json`).
 
-The `state.template.json`  shows a template of what the output should look like.
+The `state.template.json` shows a template of what the output should look like.
 
 To use the script, you must fund an address, and pass the private key of that address to the script so that it can construct
 and broadcast the deployment transactions.
@@ -57,7 +58,7 @@ only mines blocks when the transactions is queued (e.g. a local testnet), you mu
 
 run `yarn testAll` To run unit tests in the whole Repository including Deployment Implementation, Elk's V3 Core and Periphery
 
-run `yarn start -pk <your private key> -j <json rpc of the chain> -w9 <w9 contract on the chain i.e the wrapped gas token of the chain> -ncl<The Native token Name> -o <owner of the proxy contract> -c <amount of confirmations per transaction>`  TO deploy on a new chain instantly
+run `yarn start -pk <your private key> -j <json rpc of the chain> -w9 <w9 contract on the chain i.e the wrapped gas token of the chain> -ncl<The Native token Name> -o <owner of the proxy contract> -c <amount of confirmations per transaction>` TO deploy on a new chain instantly
 Example `yarn start -pk 0xusjksososaa9a27296f861aad99so0uwelkisthebest94387iskoo09sujd71ec93 -j https://rpc.ankr.com/polygon_mumbai -w9 0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889 -ncl MATIC -o 0xcd3f42e990c8f094a4f3c4256c42d742321424242 -c 1`
 
 run `yarn compile` To compile all contracts in the Repository
@@ -80,7 +81,7 @@ Check out `state.json`. It'll show you the final deployed addresses.
 
 ### When I run the script, it says "Contract was already deployed..."
 
-If you intend to deploy on multiple chains then make sure you rename the `state.json` file before running the script, if not  Delete `state.json` before a fresh deploy or. `state.json` tracks which steps have already occurred. If there are any entries, the deploy script will attempt to pick up from the last step in `state.json`.
+If you intend to deploy on multiple chains then make sure you rename the `state.json` file before running the script, if not Delete `state.json` before a fresh deploy or. `state.json` tracks which steps have already occurred. If there are any entries, the deploy script will attempt to pick up from the last step in `state.json`.
 
 ### How long will the script take?
 
