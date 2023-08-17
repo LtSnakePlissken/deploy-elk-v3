@@ -4,6 +4,7 @@ This Package includes a CLI script for deploying Elk's V3 on any EVM compatible 
 This package Simplifies testing and deploying Elk V3 on any chain/network with simple script
 
 ## Prerequisites
+
 Yarn
 Linux Environment or WSL
 This Repo
@@ -11,12 +12,12 @@ Node 16.9.1
 
 ## Usage
 
-On cloning this repo,
+Clone this repo, by running `git clone https://github.com/elkfinance/deploy-elk-v3` in your terminal/bash
 Use NVM to install and use Node version 16.9.1
-if you don't know how to do that, go to https://github.com/coreybutler/nvm-windows for Windows or run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh`  for Linux.
+if you don't know how to do that, go to [nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows or run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh`  for Linux.
 Confirm you are using the correct version of Node by running `nvm list` on your terminal or bash
 
-Install Yarn, if you don't already have that, from https://yarnpkg.com/
+Install Yarn, if you don't already have that, from [yarn](https://yarnpkg.com/)
 
 In the root directory of the Repo run `yarn` to install the package dependencies
 
@@ -25,8 +26,8 @@ Make sure too run `yarn testAll`, this is important to compile the V3 contracts
 As of this version the arguments are:
 
 ```text
-> yarn @uniswap/deploy-v3 --help
-Usage: yarn @uniswap/deploy-v3 [options]
+> yarn @elk/deploy-v3 --help
+Usage: yarn @elk/deploy-v3 [options]
 
 Options:
   -pk, --private-key <string>               Private key used to deploy all contracts
