@@ -14,7 +14,7 @@ Node 16.9.1
 
 Clone this repo, by running `git clone https://github.com/elkfinance/deploy-elk-v3` in your terminal/bash
 Use NVM to install and use Node version 16.9.1
-if you don't know how to do that, go to [nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows or run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh`  for Linux.
+if you don't know how to do that, go to [nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows or run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh` for Linux.
 Confirm you are using the correct version of Node by running `nvm list` on your terminal or bash
 
 Install Yarn, if you don't already have that, from [yarn](https://yarnpkg.com/)
