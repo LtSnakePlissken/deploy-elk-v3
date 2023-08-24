@@ -58,8 +58,11 @@ only mines blocks when the transactions is queued (e.g. a local testnet), you mu
 
 run `yarn testAll` To run unit tests in the whole Repository including Deployment Implementation, Elk's V3 Core and Periphery
 
-run `yarn start -pk <your private key> -j <json rpc of the chain> -w9 <w9 contract on the chain i.e the wrapped gas token of the chain> -ncl<The Native token Name> -o <owner of the proxy contract> -c <amount of confirmations per transaction>` TO deploy on a new chain instantly
+run `yarn start -pk <your private key> -j <json rpc of the chain> -w9 <w9 contract on the chain i.e the wrapped gas token of the chain> -ncl<The Native token symbol> -o <owner of the proxy contract- Deployment address for now> -c <amount of confirmations per transaction> (chains we are unsure about, change to 3-4- default 2-- testing 1)` TO deploy on a new chain instantly
 Example `yarn start -pk 0xusjksososaa9a27296f861aad99so0uwelkisthebest94387iskoo09sujd71ec93 -j https://rpc.ankr.com/polygon_mumbai -w9 0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889 -ncl MATIC -o 0xcd3f42e990c8f094a4f3c4256c42d742321424242 -c 1`
+
+
+For testing:
 
 run `yarn compile` To compile all contracts in the Repository
 
