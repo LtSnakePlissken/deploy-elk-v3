@@ -4,7 +4,7 @@ import { GenericMigrationStep } from './migrate'
 
 export interface MigrationState {
   readonly v3CoreFactoryAddress?: string
-  // readonly swapRouter02?: string
+  readonly swapRouter02?: string
   readonly nftDescriptorLibraryAddressV1_3_0?: string
   readonly nonfungibleTokenPositionDescriptorAddressV1_3_0?: string
   readonly descriptorProxyAddress?: string

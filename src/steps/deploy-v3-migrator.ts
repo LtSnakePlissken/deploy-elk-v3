@@ -1,4 +1,3 @@
-// import V3Migrator from '@uniswap/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
 import V3Migrator from '@elkdex/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
 import createDeployContractStep from './meta/createDeployContractStep'
 

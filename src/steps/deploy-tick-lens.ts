@@ -1,5 +1,3 @@
-// import TickLens from '@uniswap/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
-
 import TickLens from '@elkdex/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
 import createDeployContractStep from './meta/createDeployContractStep'
 
