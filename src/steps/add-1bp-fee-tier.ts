@@ -1,5 +1,6 @@
-// import UniswapV3Factory from '@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json'
-import ElkV3Factory from '../../contracts/Elk-v3-core/artifacts/contracts/ElkV3Factory.sol/ElkV3Factory.json'
+// import UniswapV3Factory from '@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json';
+// import ElkV3Factory from '../../contracts/Elk-v3-core/artifacts/contracts/ElkV3Factory.sol/ElkV3Factory.json';
+import ElkDexV3Factory from '@elkdex/v3-core/artifacts/contracts/ElkDexV3Factory.sol/ElkDexV3Factory.json';
 import { Contract } from '@ethersproject/contracts'
 import { MigrationStep } from '../migrations'
 
@@ -11,7 +12,7 @@ export const ADD_1BP_FEE_TIER: MigrationStep = async (state, { signer, gasPrice 
     throw new Error('Missing ElkV3Factory')
   }
 
-  const v3CoreFactory = new Contract(state.v3CoreFactoryAddress, ElkV3Factory.abi, signer)
+  const v3CoreFactory = new Contract(state.v3CoreFactoryAddress, ElkDexV3Factory.abi, signer)
 
   const owner = await v3CoreFactory.owner()
   if (owner !== (await signer.getAddress())) {

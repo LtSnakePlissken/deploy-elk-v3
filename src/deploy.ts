@@ -13,8 +13,8 @@ import { DEPLOY_TICK_LENS } from './steps/deploy-tick-lens'
 import { DEPLOY_TRANSPARENT_PROXY_DESCRIPTOR } from './steps/deploy-transparent-proxy-descriptor'
 import { DEPLOY_V3_CORE_FACTORY } from './steps/deploy-v3-core-factory'
 import { DEPLOY_V3_MIGRATOR } from './steps/deploy-v3-migrator'
-import { DEPLOY_V3_STAKER } from './steps/deploy-v3-staker'
-import { DEPLOY_V3_SWAP_ROUTER_02 } from './steps/deploy-v3-swap-router-02'
+// import { DEPLOY_V3_STAKER } from './steps/deploy-v3-staker'
+// import { DEPLOY_V3_SWAP_ROUTER_02 } from './steps/deploy-v3-swap-router-02'
 import { TRANSFER_PROXY_ADMIN } from './steps/transfer-proxy-admin'
 import { TRANSFER_V3_CORE_FACTORY_OWNER } from './steps/transfer-v3-core-factory-owner'
 
@@ -31,9 +31,9 @@ const MIGRATION_STEPS: MigrationStep[] = [
   DEPLOY_NONFUNGIBLE_POSITION_MANAGER,
   DEPLOY_V3_MIGRATOR,
   TRANSFER_V3_CORE_FACTORY_OWNER,
-  DEPLOY_V3_STAKER,
+  // DEPLOY_V3_STAKER,
   DEPLOY_QUOTER_V2,
-  DEPLOY_V3_SWAP_ROUTER_02,
+  // DEPLOY_V3_SWAP_ROUTER_02,
   TRANSFER_PROXY_ADMIN,
 ]
 

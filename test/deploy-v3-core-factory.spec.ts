@@ -3,7 +3,8 @@ import { Contract } from '@ethersproject/contracts'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 
 // import UniswapV3Factory from '@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json'
-import ElkV3Factory from '../contracts/Elk-v3-core/artifacts/contracts/ElkV3Factory.sol/ElkV3Factory.json'
+// import ElkV3Factory from '../contracts/Elk-v3-core/artifacts/contracts/ElkV3Factory.sol/ElkV3Factory.json'
+import ElkDexV3Factory from '@elkdex/v3-core/artifacts/contracts/ElkDexV3Factory.sol/ElkDexV3Factory.json'
 import { expect } from 'chai'
 import { DEPLOY_V3_CORE_FACTORY } from '../src/steps/deploy-v3-core-factory'
 import { asciiStringToBytes32 } from '../src/util/asciiStringToBytes32'
@@ -40,7 +41,7 @@ describe('deploy-v3-core-factory', () => {
           }
         )
       )
-      expect(result.message).to.eq('Contract ElkV3Factory deployed')
+      expect(result.message).to.eq('Contract ElkDexV3Factory deployed')
     })
 
     it('does not deploy if already deployed', async () => {
@@ -57,7 +58,7 @@ describe('deploy-v3-core-factory', () => {
           }
         )
       )
-      expect(result.message).to.eq('Contract ElkV3Factory was already deployed')
+      expect(result.message).to.eq('Contract ElkDexV3Factory was already deployed')
       expect(result.address).to.eq(DUMMY_ADDRESS)
     })
 
@@ -77,7 +78,7 @@ describe('deploy-v3-core-factory', () => {
             }
           )
         )
-        v3CoreFactory = new Contract(result.address!, ElkV3Factory.abi, provider)
+        v3CoreFactory = new Contract(result.address!, ElkDexV3Factory.abi, provider)
       })
 
       it('points to signer address', async () => {
